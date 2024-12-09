@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: #55c9c3; 
+
+}
+
+input[type="text"] {
+    color: white;
+}
+
+
+form {
+    width: 75%;
+    height: 100%;
+    padding-block: 15px;
+    z-index: 2;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid white;
+    font-size: 1rem;
+    padding-left: 1rem;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.lock {
+    width: 40px;
+    height: 40px;
+    margin-inline: 20px;
+    z-index: 2;
+}
+ 
+#background {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    right: 0px;
+    background-color: #191248;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#eye-div {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    background-color: #191248;
+    justify-content: flex-end;
+    border-radius: 50px; 
+    margin-right: 20px;
+    align-items: center;
+    z-index: 2;
+}
+
+.round {
+    border-radius: 50px; 
+    width: 60px;
+    height: 60px;
+    transition: border-radius 0.25s ease-in-out,  height 0.25s ease-in-out, width 0.15s ease-in-out;
+    margin-right: 20px;
+    z-index: -1;
+}
+
+
+.full {
+    width: 100%;
+    border-radius: 10px;
+    height: 100px;
+    transition: border-radius 0.25s ease-in-out, height 0.25s ease-in-out, width 0.15s ease-in-out;
+    margin-right: 0px;
+    z-index: -1;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#eye {  
+    width: 60px;
+    height: 60px;
+}
+
+.open {
+    padding: 5px 13px;
+}
+
+
+
+.closed {
+    padding: 20px 13px 5px 13px;
+}
+
